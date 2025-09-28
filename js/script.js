@@ -1,4 +1,5 @@
-  // Mobile menu toggle
+ 
+ // Mobile menu toggle
     document.addEventListener('DOMContentLoaded', function() {
       // Page load animation sequence
       function initPageAnimations() {
@@ -252,6 +253,8 @@
         animationObserver.observe(element);
       });
 
+      
+
       // Enhanced staggered animation for grid items
       const staggerObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -494,3 +497,4 @@
         }
       });
     });
+    

@@ -64,20 +64,20 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="showcase" class="section-bg section-estudio2">
+ <section id="showcase" class="section section-bg section-estudio7">
     <div class="container">
       <div class="hero-content">
-        <h1>DUACE BEATS</h1>
-        <p>We are a group of composers, musicians, and audio experts dedicated to crafting emotions through music for TV shows, series, streaming platforms, commercials, and any project that requires custom music. Netflix collaborators and award winners.</p>
+        <img src="http://localhost/duace-music/images/logo/logo-duace2025-negativo.svg" alt="DUACE BEATS" class="logo-main">
+        <p style="font-size: 30px;">Create The Extraordinary</p>
         <a href="#awards" class="cta-button">View Our Awards</a>
       </div>
     </div>
-  </section>
+</section>
 
   <!-- Awards & Partners Section -->
-<section id="awards" class="section ">
+<section id="awards" class="section section-bg section-estudio2">
   <div class="container">
-    <div class="section-header section-estudio2">
+    <div class="section-header">
       <h2>Awards & Partners</h2>
       <p>We've worked with major brands and won prestigious awards for our music compositions.</p>
     </div>
@@ -86,29 +86,28 @@
       <div class="award-logo">
         <img src="http://localhost/duace-music/assets/images/patt/netflix.png" alt="Netflix" loading="lazy">
       </div>
-      <div class="award-logo award-logo-large">
-  <img src="http://localhost/duace-music/assets/images/patt/festival.png" alt="Festival de Gramado" loading="lazy">
-</div>
-
-      <div class="award-logo">
-        <img src="http://localhost/duace-music/assets/images/patt/gotem.png" alt="Göteborg Film Festival" loading="lazy">
-      </div>
       <div class="award-logo">
         <img src="http://localhost/duace-music/assets/images/patt/universal.png" alt="Universal Music" loading="lazy">
       </div>
       <div class="award-logo">
         <img src="http://localhost/duace-music/assets/images/patt/warner.png" alt="Warner Music Brazil" loading="lazy">
       </div>
+      <div class="award-logo award-logo-large">
+         <img src="http://localhost/duace-music/assets/images/patt/festival.png" alt="Festival de Gramado" loading="lazy">
+      </div>
+      <div class="award-logo">
+        <img src="http://localhost/duace-music/assets/images/patt/gotem.png" alt="Göteborg Film Festival" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
 
   <!-- Netflix Trailer Section -->
-  <section id="netflix-trailer" class="section section-bg section-estudio2">
+  <section id="netflix-trailer" class="section section-bg2 section-estudio8 ">
     <div class="container">
       <div class="section-header">
         <h2>Netflix Original Soundtrack</h2>
-        <p>Watch the trailer of our award-winning Netflix original film soundtrack.</p>
+        <p>Watch the trailer of 'Noites Alienigenas' Netflix original film soundtrack.</p>
       </div>
       
       <div class="trailer-wrapper">
@@ -136,99 +135,303 @@
   </section>
 
   <!-- Playlists Section -->
-  <section id="playlists" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Discover Our Specialties</h2>
-        <p>Explore our musical identity and final audio quality. Material entirely made by our team of creators.</p>
-      </div>
-      
-      <div class="playlists-grid">
-        <div class="playlist-item">
-          <iframe 
-            class="playlist-embed"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" 
-            width="100%" 
-            height="200" 
-            frameBorder="0" 
-            allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-          </iframe>
-          <div class="playlist-info">
-            <h3 class="playlist-title">Cinematic Orchestral</h3>
+
+
+<!-- Playlists Section -->
+<section id="playlists" class="section section-bg2 section-estudio3">
+  <div class="container">
+    <div class="section-header">
+      <h2>Discover Our Specialties</h2>
+      <p>Explore our musical identity and final audio quality. Material entirely made by our team of creators.</p>
+    </div>
+    
+    <div class="playlists-grid">
+      <!-- Cinematic Orchestral -->
+      <div class="playlist-item">
+        <div class="custom-player">
+          <div class="player-content">
+            <div class="player-thumbnail" data-fallback="🎼">
+              <img src="images/thumbnails/cinematic-orchestral.png" alt="Cinematic Orchestral">
+            </div>
+            <div class="player-controls">
+              <div class="player-info">
+                <div class="track-title" id="track-title-1">Epic Journey</div>
+                <div class="track-artist">Digital Music Group</div>
+              </div>
+              <div class="audio-controls">
+                <button class="play-btn" onclick="togglePlay('audio1')">▶</button>
+                <div class="time-display">
+                  <span id="current-time-1">0:00</span> / <span id="duration-1">3:45</span>
+                </div>
+                <div class="progress-bar" onclick="setProgress(event, 'audio1')">
+                  <div class="progress-fill" id="progress-1"></div>
+                </div>
+                <div class="volume-control">
+                  <span>🔊</span>
+                  <input type="range" class="volume-slider" min="0" max="100" value="80" 
+                         onchange="setVolume('audio1', this.value)">
+                </div>
+              </div>
+            </div>
+          </div>
+          <audio id="audio1" preload="metadata">
+            <source src="audio/cinematic/epic-journey.mp3" type="audio/mpeg">
+            <source src="audio/cinematic/epic-journey.wav" type="audio/wav">
+          </audio>
+        </div>
+        
+        <div class="playlist-info">
+          <h3 class="playlist-title">Cinematic Orchestral</h3>
+          <div class="specialty-tags">
             <div class="specialty-tag">Film Scores</div>
             <div class="specialty-tag">Epic Orchestral</div>
             <div class="specialty-tag">Emotional</div>
-            <p class="playlist-description">Our signature cinematic compositions featuring full orchestral arrangements. Perfect for dramatic scenes, film trailers, and emotional storytelling moments.</p>
+          </div>
+          <p class="playlist-description">Our signature cinematic compositions featuring full orchestral arrangements. Perfect for dramatic scenes, film trailers, and emotional storytelling moments.</p>
+          
+          <div class="track-list">
+            <div class="track-item active" onclick="loadTrack('audio1', 'Epic Journey', 'audio/cinematic/epic-journey.mp3', 1)">
+              <div class="track-number">1</div>
+              <div class="track-info">
+                <div class="track-name">Epic Journey</div>
+                <div class="track-duration">3:45</div>
+              </div>
+            </div>
+            <div class="track-item" onclick="loadTrack('audio1', 'Heroes Rising', 'audio/cinematic/heroes-rising.mp3', 2)">
+              <div class="track-number">2</div>
+              <div class="track-info">
+                <div class="track-name">Heroes Rising</div>
+                <div class="track-duration">4:12</div>
+              </div>
+            </div>
+            <div class="track-item" onclick="loadTrack('audio1', 'Final Battle', 'audio/cinematic/final-battle.mp3', 3)">
+              <div class="track-number">3</div>
+              <div class="track-info">
+                <div class="track-name">Final Battle</div>
+                <div class="track-duration">5:30</div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="playlist-item">
-          <iframe 
-            class="playlist-embed"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd?utm_source=generator" 
-            width="100%" 
-            height="200" 
-            frameBorder="0" 
-            allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-          </iframe>
-          <div class="playlist-info">
-            <h3 class="playlist-title">Electronic Soundscapes</h3>
+      <!-- Electronic Soundscapes -->
+      <div class="playlist-item">
+        <div class="custom-player">
+          <div class="player-content">
+            <div class="player-thumbnail" data-fallback="🎹">
+              <img src="images/thumbnails/electronic-soundscapes.jpg" alt="Electronic Soundscapes">
+            </div>
+            <div class="player-controls">
+              <div class="player-info">
+                <div class="track-title" id="track-title-2">Neon Dreams</div>
+                <div class="track-artist">Digital Music Group</div>
+              </div>
+              <div class="audio-controls">
+                <button class="play-btn" onclick="togglePlay('audio2')">▶</button>
+                <div class="time-display">
+                  <span id="current-time-2">0:00</span> / <span id="duration-2">4:20</span>
+                </div>
+                <div class="progress-bar" onclick="setProgress(event, 'audio2')">
+                  <div class="progress-fill" id="progress-2"></div>
+                </div>
+                <div class="volume-control">
+                  <span>🔊</span>
+                  <input type="range" class="volume-slider" min="0" max="100" value="80" 
+                         onchange="setVolume('audio2', this.value)">
+                </div>
+              </div>
+            </div>
+          </div>
+          <audio id="audio2" preload="metadata">
+            <source src="audio/electronic/neon-dreams.mp3" type="audio/mpeg">
+            <source src="audio/electronic/neon-dreams.wav" type="audio/wav">
+          </audio>
+        </div>
+        
+        <div class="playlist-info">
+          <h3 class="playlist-title">Electronic Soundscapes</h3>
+          <div class="specialty-tags">
             <div class="specialty-tag">Synth Wave</div>
             <div class="specialty-tag">Ambient</div>
             <div class="specialty-tag">Future Bass</div>
-            <p class="playlist-description">Modern electronic compositions blending synthetic textures with organic elements. Ideal for tech commercials, gaming content, and contemporary media.</p>
+          </div>
+          <p class="playlist-description">Modern electronic compositions blending synthetic textures with organic elements. Ideal for tech commercials, gaming content, and contemporary media.</p>
+          
+          <div class="track-list">
+            <div class="track-item active" onclick="loadTrack('audio2', 'Neon Dreams', 'audio/electronic/neon-dreams.mp3', 1)">
+              <div class="track-number">1</div>
+              <div class="track-info">
+                <div class="track-name">Neon Dreams</div>
+                <div class="track-duration">4:20</div>
+              </div>
+            </div>
+            <div class="track-item" onclick="loadTrack('audio2', 'Digital Pulse', 'audio/electronic/digital-pulse.mp3', 2)">
+              <div class="track-number">2</div>
+              <div class="track-info">
+                <div class="track-name">Digital Pulse</div>
+                <div class="track-duration">3:55</div>
+              </div>
+            </div>
+            <div class="track-item" onclick="loadTrack('audio2', 'Cyber Space', 'audio/electronic/cyber-space.mp3', 3)">
+              <div class="track-number">3</div>
+              <div class="track-info">
+                <div class="track-name">Cyber Space</div>
+                <div class="track-duration">4:45</div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="playlist-item">
-          <iframe 
-            class="playlist-embed"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO?utm_source=generator" 
-            width="100%" 
-            height="200" 
-            frameBorder="0" 
-            allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-          </iframe>
-          <div class="playlist-info">
-            <h3 class="playlist-title">Urban Hip-Hop Beats</h3>
+      <!-- Urban Hip-Hop Beats -->
+      <div class="playlist-item">
+        <div class="custom-player">
+          <div class="player-content">
+            <div class="player-thumbnail" data-fallback="🎤">
+              <img src="images/thumbnails/urban-hiphop.jpg" alt="Urban Hip-Hop Beats">
+            </div>
+            <div class="player-controls">
+              <div class="player-info">
+                <div class="track-title" id="track-title-3">Street Anthem</div>
+                <div class="track-artist">Digital Music Group</div>
+              </div>
+              <div class="audio-controls">
+                <button class="play-btn" onclick="togglePlay('audio3')">▶</button>
+                <div class="time-display">
+                  <span id="current-time-3">0:00</span> / <span id="duration-3">3:30</span>
+                </div>
+                <div class="progress-bar" onclick="setProgress(event, 'audio3')">
+                  <div class="progress-fill" id="progress-3"></div>
+                </div>
+                <div class="volume-control">
+                  <span>🔊</span>
+                  <input type="range" class="volume-slider" min="0" max="100" value="80" 
+                         onchange="setVolume('audio3', this.value)">
+                </div>
+              </div>
+            </div>
+          </div>
+          <audio id="audio3" preload="metadata">
+            <source src="audio/hiphop/street-anthem.mp3" type="audio/mpeg">
+            <source src="audio/hiphop/street-anthem.wav" type="audio/wav">
+          </audio>
+        </div>
+        
+        <div class="playlist-info">
+          <h3 class="playlist-title">Urban Hip-Hop Beats</h3>
+          <div class="specialty-tags">
             <div class="specialty-tag">Trap</div>
             <div class="specialty-tag">Hip-Hop</div>
             <div class="specialty-tag">Urban</div>
-            <p class="playlist-description">High-energy urban beats with professional mixing and mastering. Features our collaborations with major artists and labels in the hip-hop scene.</p>
+          </div>
+          <p class="playlist-description">High-energy urban beats with professional mixing and mastering. Features our collaborations with major artists and labels in the hip-hop scene.</p>
+          
+          <div class="track-list">
+            <div class="track-item active" onclick="loadTrack('audio3', 'Street Anthem', 'audio/hiphop/street-anthem.mp3', 1)">
+              <div class="track-number">1</div>
+              <div class="track-info">
+                <div class="track-name">Street Anthem</div>
+                <div class="track-duration">3:30</div>
+              </div>
+            </div>
+            <div class="track-item" onclick="loadTrack('audio3', 'Urban Flow', 'audio/hiphop/urban-flow.mp3', 2)">
+              <div class="track-number">2</div>
+              <div class="track-info">
+                <div class="track-name">Urban Flow</div>
+                <div class="track-duration">4:05</div>
+              </div>
+            </div>
+            <div class="track-item" onclick="loadTrack('audio3', 'Bass Drop', 'audio/hiphop/bass-drop.mp3', 3)">
+              <div class="track-number">3</div>
+              <div class="track-info">
+                <div class="track-name">Bass Drop</div>
+                <div class="track-duration">3:15</div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="playlist-item">
-          <iframe 
-            class="playlist-embed"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" 
-            width="100%" 
-            height="200" 
-            frameBorder="0" 
-            allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-          </iframe>
-          <div class="playlist-info">
-            <h3 class="playlist-title">Corporate & Commercial</h3>
+      <!-- Corporate & Commercial -->
+      <div class="playlist-item">
+        <div class="custom-player">
+          <div class="player-content">
+            <div class="player-thumbnail" data-fallback="🏢">
+              <img src="images/thumbnails/corporate-commercial.jpg" alt="Corporate & Commercial">
+            </div>
+            <div class="player-controls">
+              <div class="player-info">
+                <div class="track-title" id="track-title-4">Success Story</div>
+                <div class="track-artist">Digital Music Group</div>
+              </div>
+              <div class="audio-controls">
+                <button class="play-btn" onclick="togglePlay('audio4')">▶</button>
+                <div class="time-display">
+                  <span id="current-time-4">0:00</span> / <span id="duration-4">2:45</span>
+                </div>
+                <div class="progress-bar" onclick="setProgress(event, 'audio4')">
+                  <div class="progress-fill" id="progress-4"></div>
+                </div>
+                <div class="volume-control">
+                  <span>🔊</span>
+                  <input type="range" class="volume-slider" min="0" max="100" value="80" 
+                         onchange="setVolume('audio4', this.value)">
+                </div>
+              </div>
+            </div>
+          </div>
+          <audio id="audio4" preload="metadata">
+            <source src="audio/corporate/success-story.mp3" type="audio/mpeg">
+            <source src="audio/corporate/success-story.wav" type="audio/wav">
+          </audio>
+        </div>
+        
+        <div class="playlist-info">
+          <h3 class="playlist-title">Corporate & Commercial</h3>
+          <div class="specialty-tags">
             <div class="specialty-tag">Corporate</div>
             <div class="specialty-tag">Uplifting</div>
             <div class="specialty-tag">Commercial</div>
-            <p class="playlist-description">Professional music for corporate videos, advertisements, and brand content. Uplifting and motivational tracks that enhance your message.</p>
+          </div>
+          <p class="playlist-description">Professional music for corporate videos, advertisements, and brand content. Uplifting and motivational tracks that enhance your message.</p>
+          
+          <div class="track-list">
+            <div class="track-item active" onclick="loadTrack('audio4', 'Success Story', 'audio/corporate/success-story.mp3', 1)">
+              <div class="track-number">1</div>
+              <div class="track-info">
+                <div class="track-name">Success Story</div>
+                <div class="track-duration">2:45</div>
+              </div>
+            </div>
+            <div class="track-item" onclick="loadTrack('audio4', 'Innovation', 'audio/corporate/innovation.mp3', 2)">
+              <div class="track-number">2</div>
+              <div class="track-info">
+                <div class="track-name">Innovation</div>
+                <div class="track-duration">3:10</div>
+              </div>
+            </div>
+            <div class="track-item" onclick="loadTrack('audio4', 'Growth', 'audio/corporate/growth.mp3', 3)">
+              <div class="track-number">3</div>
+              <div class="track-info">
+                <div class="track-name">Growth</div>
+                <div class="track-duration">2:55</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+
+  
 
   <!-- Services Section -->
-  <section id="services" class="section section-bg section-home">
+  <section id="services" class="section section-bg section-bg section-estudio6">
     <div class="container">
       <div class="section-header">
         <h2>Our Services</h2>
@@ -272,7 +475,7 @@
   </section>
 
   <!-- Catalog Section -->
-  <section id="catalog" class="section">
+  <section id="catalog" class="section section-bg2">
     <div class="container">
       <div class="section-header">
         <h2>Beat Catalog</h2>
@@ -293,10 +496,10 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section section-bg">
+  <section id="about" class="section section-bg section-estudio9">
     <div class="container">
       <div class="section-header">
-        <h2>Meet Our Team</h2>
+        <h2>Digital Music Group</h2>
         <p>Get to know our creative team and our professional background.</p>
       </div>
       
@@ -312,16 +515,32 @@
           <p>Producer & Audio Engineer</p>
         </div>
         <div class="team-member">
-          <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8462f08c527713cf327840f553" alt="Guh - Composer" loading="lazy">
+          <img src="http://localhost/duace-music/assets/images/team/adel.jpg" alt="Adel" loading="lazy">
+          <h3>Adel</h3>
+          <p>Producer</p>
+        </div>
+        <div class="team-member">
+          <img src="http://localhost/duace-music/assets/images/team/leorota.jpg" alt="Leo Rota" loading="lazy">
           <h3>Leo Rota</h3>
           <p>Guitarist & Arranger</p>
         </div>
+          <div class="team-member">
+          <img src="http://localhost/duace-music/assets/images/team/west.png" alt="West" loading="lazy">
+          <h3>West Reis</h3>
+          <p>Composer</p>
+        </div>
+        <div class="team-member">
+          <img src="http://localhost/duace-music/assets/images/team/guigow.jpg" alt="Guiggow" loading="lazy">
+          <h3>Guiggow</h3>
+          <p>Composer</p>
+        </div>
       </div>
+      
     </div>
   </section>
 
   <!-- Releases Section -->
-  <section id="releases" class="section">
+  <section id="releases" class="section section-bg section-estudio4">
     <div class="container">
       <div class="section-header">
         <h2>Featured Releases</h2>
@@ -477,7 +696,7 @@
   </section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials" class="section section-bg">
+  <section id="testimonials" class="section section-bg2">
     <div class="container">
       <div class="section-header">
         <h2>What Our Clients Say</h2>
@@ -548,7 +767,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <section id="contact" class="section section-bg section-bg2">
     <div class="container">
       <div class="section-header">
         <h2>Let's Create Together</h2>
@@ -629,5 +848,6 @@
     </div>
   </footer>
   <script src="http://localhost/duace-music/js/script.js"></script>
+  <script src="http://localhost/duace-music/js/player.js"></script>
 </body>
 </html>
